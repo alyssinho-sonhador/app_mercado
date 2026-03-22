@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mercado do Pai</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mercado do Pai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
-
 <body>
+    <header>
+        <h2 id="main-title">🛒 Atacarejo São José</h2>
+        <p>Escolha uma categoria abaixo</p>
+    </header>
 
-<h2>🛒 Mercado do Pai</h2>
+    <div class="container">
+        <div class="category-card" onclick="abrirCategoria('bebidas')">
+            <span class="icon">🥤</span>
+            <div class="info">
+                <strong>Bebidas</strong>
+                <span>Sucos, águas e refrigerantes</span>
+            </div>
+            <span class="arrow">›</span>
+        </div>
 
-<button onclick="abrirCategoria('bebidas')">
-🥤 Bebidas
-</button>
+        <div class="category-card" onclick="abrirCategoria('acougue')">
+            <span class="icon">🥩</span>
+            <div class="info">
+                <strong>Açougue</strong>
+                <span>Carnes frescas e cortes</span>
+            </div>
+            <span class="arrow">›</span>
+        </div>
 
-<button onclick="abrirCategoria('acougue')">
-🥩 Açougue
-</button>
+        <div class="category-card" onclick="abrirCategoria('frios')">
+            <span class="icon">🧀</span>
+            <div class="info">
+                <strong>Frios e Laticínios</strong>
+                <span>Queijos, presuntos e leite</span>
+            </div>
+            <span class="arrow">›</span>
+        </div>
 
-<button onclick="abrirCategoria('frios')">
-🧀 Frios e Laticínios
-</button>
+        <div class="category-card" onclick="abrirCategoria('cereais')">
+            <span class="icon">🌾</span>
+            <div class="info">
+                <strong>Cereais</strong>
+                <span>Arroz, feijão e massas</span>
+            </div>
+            <span class="arrow">›</span>
+        </div>
+    </div>
 
-<button onclick="abrirCategoria('cereais')">
-🌾 Cereais
-</button>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
